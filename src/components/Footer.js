@@ -3,23 +3,25 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import linkedin from '../icons/linkedin.png';
 import facebook from '../icons/facebook.png';
-import instagram from '../icons/instagram.png';
+import instagram from '../icons/instagram2.png';
 
 const Footer = () => {
   return (
     <CopyDiv>
       <FooterDiv>
-        <MoreSectionStyling>
+        <SectionStyling>
           <section className="section more">
             <div className="big-social-media-links">
 
               <div className="logo">
-                <a
-                  href="https://www.linkedin.com/in/frida-gylner-3ba43890?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABNJGz4By7gkwZcN8f3yDveujU27LLUwmm4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BmsrIJYLQT3maZvBbTKelAg%3D%3D"
-                  target="_blank"
-                  rel="noreferrer">
-                  <img alt="LinkedIn" src={linkedin} />
-                </a>
+                <StyledLink>
+                  <a
+                    href="https://www.linkedin.com/in/frida-gylner-3ba43890?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABNJGz4By7gkwZcN8f3yDveujU27LLUwmm4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BmsrIJYLQT3maZvBbTKelAg%3D%3D"
+                    target="_blank"
+                    rel="noreferrer">
+                    <img alt="LinkedIn" src={linkedin} />
+                  </a>
+                </StyledLink>
               </div>
 
               <div className="logo">
@@ -38,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
           </section>
-        </MoreSectionStyling>
+        </SectionStyling>
       </FooterDiv>
       <StyledFooterText>© Mia Dahlgren 2023</StyledFooterText>
 
@@ -48,7 +50,7 @@ const Footer = () => {
 
 export default Footer;
 
-const MoreSectionStyling = styled.section`
+const SectionStyling = styled.section`
   .section.more{
     align-items:center;
     flex-direction: column;
@@ -61,23 +63,30 @@ const MoreSectionStyling = styled.section`
     border: tan solid 1.5px;
     border-radius: 50%;
     padding: 1px;
-    }
+
+    &:hover {
+    border: green solid 1.5px;
+  }
+}
+    
     .big-social-media-links{
       display: flex;
       flex-direction: row;
-      gap: 5vw;
+      gap: 4vw;
        }
        @media (min-width: 667px) and (max-width: 1024px){
            }
       
       @media (min-width: 1024px) {
           }
+
+
           `
 
 export const StyledFooterText = styled.span`
 font-size: 10px;
 justify-content: center;
-margin-top: 3vh;
+margin-top: 5vh;
 `
 
 export const CopyDiv = styled.div`
@@ -93,3 +102,8 @@ flex-direction: row;
 justify-content: center;
 `
 
+export const StyledLink = styled.a`
+    ${(props) => (props.shouldHover
+  )
+}
+`
