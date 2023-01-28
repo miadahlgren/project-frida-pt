@@ -20,9 +20,9 @@ const Header = () => {
           <StyledSubHeading>
             <StyledLink to="/">Hem</StyledLink>
             <StyledHeaderSpan>|</StyledHeaderSpan>
-            <StyledLink to="/">Kontakt</StyledLink>
+            <StyledLink to="/Contact">Kontakt</StyledLink>
             <StyledHeaderSpan>|</StyledHeaderSpan>
-            <StyledLink to="/">Mina tjänster</StyledLink>
+            <StyledLink to="/Services">Mina tjänster</StyledLink>
           </StyledSubHeading>
         </StyledNav>
       </StyledHeader3>
@@ -45,11 +45,11 @@ flex-direction: row;
 } */
 `
 export const StyledHeader1 = styled.header`
-background-image: linear-gradient(rgba(255, 255, 255, 0.900), rgba(0, 0, 0, 0.2)), url(${punch});
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0.900), rgba(0, 0, 0, 0.2)), url(${punch});
 background-size: cover;
 background-repeat: no-repeat;
 width: 33.3%;
-background-position: 0vw;
+background-position: -4vw;
 min-height: 74vh;
 display: flex;
 align-items: center;
@@ -107,12 +107,14 @@ margin: 0 1.5em;
 `
 
 const StyledLink = styled(NavLink)`
-  &.active {
     font-weight: 700;
     color: grey;
+    text-decoration: none;
+    &:hover {
+text-decoration: underline;
+color: silver;
   }
 `
-
 export const StyledSubHeading2 = styled.h3`
   font-family: 'Lato', sans-serif;
   color: grey;

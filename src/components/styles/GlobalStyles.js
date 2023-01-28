@@ -9,7 +9,7 @@ justify-content: center;
 `
 
 export const InnerWrapper = styled.section`
-width: 70vw;
+width: 90vw;
 min-height: 60vh;
 margin: 0;
 display: flex;

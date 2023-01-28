@@ -17,3 +17,21 @@ code {
 p {
   font-family: 'Marcellus', serif;
 }
+
+.section{
+  display: flex;
+  flex-direction: column;
+  }
+
+  a{
+      text-decoration: none;
+      color:  black; 
+      font-family: 'Marcellus', serif;
+   }
+
+
+  
+
+.section p a{
+  color:#f09254;
+}
