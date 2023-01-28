@@ -1,7 +1,7 @@
 .swiper {
     width: 100%;
     height: auto;
-    margin-bottom: 2em;
+    margin: 5vh 0 5vh 0;
 }
 
 .swiper-slide {
@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    height: 58vh;
     max-width: 200vw;
 }
 

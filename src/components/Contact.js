@@ -19,17 +19,6 @@ Cras consectetur vulputate ultrices.
 
         </StyledSection>
         <ProfilePic />
-        <StyledSection>
-          <StyledHeading>KONTAKT</StyledHeading>
-          <section className="section footer">
-            <div className="footer-header">
-              <a className="name" href="mailto: frida.frison@mail.comm">Frida Gylner-Törnby</a><br />
-              <a href="tel: +4674444444"> Tel: (+46)7 444 44 44</a><br />
-              <a href="mailto: frida.frison@mail.comm"> frida.frison@mail.com</a><br />
-              <a href="mailto: frida.frison@mail.comm">Stockholm, Sweden.</a><br />
-            </div>
-          </section>
-        </StyledSection>
       </OuterWrapper>
       <Footer />
     </>

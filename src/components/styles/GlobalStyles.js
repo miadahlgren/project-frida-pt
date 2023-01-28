@@ -39,6 +39,7 @@ color: var(--color-darkBlack);
 font-size: 20px;
 font-weight: 400;
 text-align: center;
+margin: 8vh 0 2vh 0;
 @media (min-width: 667px) and (max-width: 1024px) {
     font-size: 20px;
 }

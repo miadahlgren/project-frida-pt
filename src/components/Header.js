@@ -20,7 +20,7 @@ const Header = () => {
           <StyledSubHeading>
             <StyledLink to="/">Hem</StyledLink>
             <StyledHeaderSpan>|</StyledHeaderSpan>
-            <StyledLink to="/Contact">Kontakt</StyledLink>
+            <StyledLink to="/Contact">Om mig</StyledLink>
             <StyledHeaderSpan>|</StyledHeaderSpan>
             <StyledLink to="/Services">Mina tjänster</StyledLink>
           </StyledSubHeading>
